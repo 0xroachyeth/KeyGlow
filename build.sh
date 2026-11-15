@@ -25,6 +25,11 @@ cat > $APP/Contents/Info.plist <<PLIST
 <key>CFBundleVersion</key><string>$VERSION</string>
 <key>LSMinimumSystemVersion</key><string>13.0</string>
 <key>LSUIElement</key><true/>
+<key>NSAudioCaptureUsageDescription</key><string>KeyGlow measures how loud your Mac's audio is so the Music effect can pulse to the beat. Nothing is recorded.</string>
+<key>CFBundleURLTypes</key><array><dict>
+  <key>CFBundleURLName</key><string>KeyGlow</string>
+  <key>CFBundleURLSchemes</key><array><string>keyglow</string></array>
+</dict></array>
 <key>NSMicrophoneUsageDescription</key><string>KeyGlow listens to sound so the Music effect can pulse your keyboard backlight.</string>
 </dict></plist>
 PLIST
